@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- SUPER Importante esta etiqueta DOCTYPE html, para que el navegador sepa que andamos en HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - CIC</title>
+    <style>
+        table {
+         width: 400px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Precio</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Teclado</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td>Cuaderno</td>
+                <td>$5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: $30</td>
+        </tfoot>
+
+    </table>
+
+    <!-- Lista ordenada y desordenada -->
+    <h3>Lista Desordenada</h3> 
+    <ul>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Element</li>
+     </ul>
+    <br>
+    <h3>Lista Ordenada</h3>
+    <ol>
+        <li value="100">Elemento</li>
+        <li>Elemento</li>
+        <li>Element</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub element</li>
+                <li style="list-style-type: lower-alpha;">sub element</li>
+                <li style="list-style-type: lower-alpha;">sub element</li>
+            </ol>
+        </li>
+    </ol>
+    <h1>Formulario</h1>
+    <form action="formulario"  method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Juanito" />
+        <br />
+        <label for="lastName">Apellido</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Pastoriza" />
+        <br />
+        <label for="comment">Comentario</label>
+        <br>
+        <textarea rows="10" cols="40" name="comment" id="comment" placeholder="Ingrese comentario"></textarea>
+        <br />
+        <button type="submit">Enviar</button>
+    </form>
+    <h1>Esto es un titulo... y el más grande.... Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+    <p>Esto es un parrafo normal</p>
+    <small>Texto pequeño, etiqueta small</small>
+    <!-- Esto es una linea horizontal :v -->
+    <hr />
+    <p>Bueno, esto es un nuevo texto, al cual introduciremos un salto 
+    de linea
+    <br />
+    Vale este es el texto, luego del salto de linea 
+    </p>
+    <a href="https://www.google.com" target="_blank">Enlace que nos lleva a Google.com</a>
+    <h2>A continuación la foto de un pancito :3 </h2>
+    <img src="/images/bread.jpeg" width="400" height="250" alt="bread" />
+    <br>
+    <small>dimensiones: 400x250</small>
+</body>
+</html>
