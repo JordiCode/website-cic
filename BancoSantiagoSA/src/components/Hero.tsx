@@ -1,13 +1,5 @@
 import { MoneyBagIcon } from "./icons/MoneyBagIcon"
 
-//import { StarIcon } from "./icons/StarIcon"
-const features = [
-    { name: "Pagos en línea" },
-    { name: "Soporte 24/7" },
-    { name: "Ofertas de pagos" },
-    { name: "Tarjetas de débito" }
-]
-
 export const Hero = () => {
     return (
         <section className="relative overflow-hidden pt-16 md:pt-24 lg:pt-32 pb-16">
