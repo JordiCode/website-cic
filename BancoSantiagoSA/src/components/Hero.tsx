@@ -1,4 +1,6 @@
-import { StarIcon } from "./icons/StarIcon"
+import { MoneyBagIcon } from "./icons/MoneyBagIcon"
+
+//import { StarIcon } from "./icons/StarIcon"
 const features = [
     { name: "Pagos en línea" },
     { name: "Soporte 24/7" },
@@ -8,21 +10,58 @@ const features = [
 
 export const Hero = () => {
     return (
-        <section className="w-full h-max bg-sky-900 p-2.5 py-24 flex items-center">
-            <div>
-                <h1 className="text-4xl font-bold max-w-2xl mb-8">Aprovecha todos los beneficios que tenemos para ti</h1>
-
-                <section className="flex gap-5 flex-wrap">
-                    {
-                        features.map((feature) => (
-                            <p className="bg-blue-500 rounded-md p-2 flex gap-2 items-center transition-transform hover:scale-104">
-                                <StarIcon size={20} />
-                                {' '}
-                                {feature.name}
-                            </p>
-                        ))
-                    }
-                </section>
+        <section className="relative overflow-hidden pt-16 md:pt-24 lg:pt-32 pb-16">
+            {/* Background Gradient Effects */}
+            <div
+                className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-accent/10 blur-[120px] rounded-full pointer-events-none z-0"
+            >
+            </div>
+            <div
+                className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center"
+            >
+                <div
+                    className="inline-flex items-center rounded-full border border-primary/30 bg-accent/10 px-3 py-1 text-xs font-medium text-primary mb-6"
+                >
+                    <span
+                        className="flex h-1.5 w-1.5 rounded-full bg-accent mr-2 animate-pulse"
+                    ></span>
+                    Ahora Disponibles 24/7
+                </div>
+                <h1
+                    className="text-4xl font-black tracking-tight text-slate-900 dark:text-white sm:text-6xl md:text-7xl max-w-4xl leading-[1.1]"
+                >
+                    Creciendo juntos en el
+                    {' '}
+                    <span
+                        className="text-transparent bg-clip-text bg-linear-to-r from-accent to-blue-400"
+                    >
+                        Corazón del Cibao
+                    </span>
+                </h1>
+                <p className="mt-6 max-w-2xl text-lg text-slate-600 dark:text-gray-400">
+                    En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar
+                    tus metas con la solidez que mereces.
+                </p>
+                <div
+                    className="mt-10 flex flex-col sm:flex-row gap-4 w-full justify-center"
+                >
+                    {/* Pendiente a implementar el siguiente button y enlace */}
+                    <button
+                        className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-base font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-accent-hover hover:scale-105 focus-visible:outline-none"
+                    >
+                        Abre tu cuenta gratis
+                    </button>
+                    <a
+                        href="#"
+                        className="inline-flex h-12 items-center justify-center rounded-lg border  border-slate-800 bg-background px-8 text-base font-bold text-white shadow transition-all hover:bg-slate-900 focus-visible:outline-none gap-2 notranslate"
+                        translate="no"
+                    >
+                        <span className="text-accent">
+                            <MoneyBagIcon size={24} />
+                        </span>
+                        Solicita tu préstamo
+                    </a>
+                </div>
             </div>
         </section>
     )
