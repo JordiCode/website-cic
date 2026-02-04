@@ -1,4 +1,4 @@
-import { Star } from "./icons/Star"
+import { StarIcon } from "./icons/StarIcon"
 const features = [
     { name: "Pagos en línea" },
     { name: "Soporte 24/7" },
@@ -16,7 +16,7 @@ export const Hero = () => {
                     {
                         features.map((feature) => (
                             <p className="bg-blue-500 rounded-md p-2 flex gap-2 items-center transition-transform hover:scale-104">
-                                <Star size={20} />
+                                <StarIcon size={20} />
                                 {' '}
                                 {feature.name}
                             </p>
