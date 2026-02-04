@@ -3,11 +3,10 @@
 #root {
   margin: 0 auto;
   padding: 0.25rem;
-  text-align: center;
   background-color: #111827;
   color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
