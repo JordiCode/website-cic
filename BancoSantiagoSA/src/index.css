@@ -4,6 +4,8 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui;
   --color-accent: #2E72F0;
+  --color-primaryText: white;
+  --color-secondaryText: #90a1b9;
   --color-background: #0F1115;
 }
 
@@ -16,7 +18,7 @@ body {
   font-family: var(--font-sans);
   margin: 0 auto;
   padding: 0.25rem;
-  color: white;
+  color: var(--color-secondaryText);
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */

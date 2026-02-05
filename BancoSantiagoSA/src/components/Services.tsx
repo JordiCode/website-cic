@@ -6,7 +6,7 @@ export const Services = () => {
 
             <div className="text-center mb-8">
                 < h2
-                    className="text-5xl mb-2 text-center font-black tracking-tight text-white leading-[1.1]"
+                    className="text-5xl mb-2 text-center font-black tracking-tight text-primaryText leading-[1.1]"
                 >
                     Nuestros
                     {' '}
@@ -14,7 +14,7 @@ export const Services = () => {
                         Servicios
                     </span>
                 </h2 >
-                <p className="text-slate-400">Conoce los servicios que tenemos para brindarte</p>
+                <p>Conoce los servicios que tenemos para brindarte</p>
             </div >
             <Tabs />
         </div >

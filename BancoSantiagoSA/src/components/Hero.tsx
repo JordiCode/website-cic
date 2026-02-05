@@ -17,20 +17,22 @@ export const Hero = () => {
                     <span
                         className="flex h-1.5 w-1.5 rounded-full bg-accent mr-2 animate-pulse"
                     ></span>
-                    Ahora Disponibles 24/7
+                    <p className="text-primaryText">
+                        Ahora Disponibles 24/7
+                    </p>
                 </div>
                 <h1
-                    className="text-4xl font-black tracking-tight text-white sm:text-6xl md:text-7xl max-w-4xl leading-[1.1]"
+                    className="text-4xl font-black tracking-tight text-primaryText sm:text-6xl md:text-7xl max-w-4xl leading-[1.1]"
                 >
                     Creciendo juntos en el
                     {' '}
                     <span
-                        className="text-transparent bg-clip-text bg-linear-to-r from-white to-accent"
+                        className="text-transparent bg-clip-text bg-linear-to-r from-primaryText to-accent"
                     >
                         Corazón del Cibao
                     </span>
                 </h1>
-                <p className="mt-6 max-w-2xl text-lg text-slate-400">
+                <p className="mt-6 max-w-2xl text-lg">
                     En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar
                     tus metas con la solidez que mereces.
                 </p>
@@ -39,13 +41,13 @@ export const Hero = () => {
                 >
                     {/* Pendiente a implementar el siguiente button y enlace */}
                     <button
-                        className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-base font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-accent-hover hover:scale-105 focus-visible:outline-none"
+                        className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-base font-bold text-primaryText  shadow-lg shadow-primary/25 transition-all hover:bg-accent-hover hover:scale-105 focus-visible:outline-none"
                     >
                         Abre tu cuenta gratis
                     </button>
                     <a
                         href="#"
-                        className="inline-flex h-12 items-center justify-center rounded-lg border  border-slate-800 bg-background px-8 text-base font-bold text-white shadow transition-all hover:bg-slate-900 focus-visible:outline-none gap-2 notranslate"
+                        className="inline-flex h-12 items-center justify-center rounded-lg border  border-slate-800 bg-background px-8 text-base font-bold  shadow transition-all hover:bg-slate-900 focus-visible:outline-none gap-2 notranslate"
                         translate="no"
                     >
                         <span className="text-accent">
