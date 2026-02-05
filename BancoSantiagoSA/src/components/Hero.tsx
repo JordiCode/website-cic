@@ -20,17 +20,17 @@ export const Hero = () => {
                     Ahora Disponibles 24/7
                 </div>
                 <h1
-                    className="text-4xl font-black tracking-tight text-slate-900 dark:text-white sm:text-6xl md:text-7xl max-w-4xl leading-[1.1]"
+                    className="text-4xl font-black tracking-tight text-white sm:text-6xl md:text-7xl max-w-4xl leading-[1.1]"
                 >
                     Creciendo juntos en el
                     {' '}
                     <span
-                        className="text-transparent bg-clip-text bg-linear-to-r from-accent to-blue-400"
+                        className="text-transparent bg-clip-text bg-linear-to-r from-white to-accent"
                     >
                         Corazón del Cibao
                     </span>
                 </h1>
-                <p className="mt-6 max-w-2xl text-lg text-slate-600 dark:text-gray-400">
+                <p className="mt-6 max-w-2xl text-lg text-slate-400">
                     En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar
                     tus metas con la solidez que mereces.
                 </p>

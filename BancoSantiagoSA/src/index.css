@@ -7,13 +7,16 @@
   --color-background: #0F1115;
 }
 
+
+body {
+  background-color: var(--color-background);
+}
+
 #root {
   font-family: var(--font-sans);
   margin: 0 auto;
   padding: 0.25rem;
-  background-color: var(--color-background);
   color: white;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
