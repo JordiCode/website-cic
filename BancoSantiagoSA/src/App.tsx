@@ -4,6 +4,8 @@ import { Hero } from './components/Hero'
 import { Services } from './components/Services'
 import { Location } from './components/Location'
 import { Contact } from './components/Contact'
+import { FAQ } from './components/FAQ'
+import { Footer } from './components/layout/Footer'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <Services />
       <Location />
       <Contact />
+      <FAQ />
+      <Footer />
     </>
   )
 }
