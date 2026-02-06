@@ -42,7 +42,7 @@ const FAQS = [
 export const FAQ = () => {
     return (
         <section className="mx-auto max-w-7xl w-full mt-24 max-md:mt-12 flex flex-col items-center">
-            <div className="mb-12">
+            <div className="mb-6">
                 <span className="flex flex-col items-center gap-4">
                     <h2 className="text-4xl md:text-5xl mb-2 text-center font-black tracking-tight leading-[1.1] text-transparent bg-clip-text bg-linear-to-r from-primaryText to-accent">
                         Preguntas Frecuentes
