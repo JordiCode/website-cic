@@ -22,7 +22,7 @@ export const Hero = () => {
                     </p>
                 </div>
                 <h1
-                    className="text-4xl font-black tracking-tight text-primaryText sm:text-6xl md:text-7xl max-w-4xl leading-[1.1]"
+                    className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-primaryText  max-w-4xl leading-[1.1]"
                 >
                     Creciendo juntos en el
                     {' '}

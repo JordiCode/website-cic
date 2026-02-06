@@ -4,9 +4,9 @@ export const Location = () => {
     return (
         <section className="mx-auto max-w-7xl w-full mt-24 max-md:mt-12 ">
             <article className="mb-4">
-                <span className="flex  flex-col items-center gap-4">
+                <span className="flex flex-col items-center gap-4">
                     <MapPinIcon size={48} className="stroke-accent stroke-2" />
-                    <h2 className=" text-5xl mb-2 text-center font-black tracking-tight text-primaryText leading-[1.1]">
+                    <h2 className="text-4xl md:text-5xl mb-2 text-center font-black tracking-tight text-primaryText leading-[1.1]">
                         Encuentra nuestra <span className="text-transparent bg-clip-text bg-linear-to-r from-primaryText to-accent">Oficina</span>
                     </h2>
                 </span>

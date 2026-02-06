@@ -3,7 +3,7 @@ export const Contact = () => {
         <section className="mx-auto px-6 max-w-7xl w-full mt-24 max-md:mt-12">
             <article className="mb-6">
                 <span className="flex flex-col items-center gap-4">
-                    <h2 className=" text-6xl mb-2 text-center font-black tracking-tight text-accent leading-[1.1]">
+                    <h2 className="text-4xl md:text-5xl mb-2 text-center font-black tracking-tight text-accent leading-[1.1]">
                         Contactanos
                     </h2>
                 </span>
