@@ -1,7 +1,7 @@
 export const DigitalBank = () => {
     return (
         <>
-            <ul className="grid gap-4 text-xl">
+            <ul className="grid gap-4 text-lg">
                 <li>
                     Gestión 24 / 7: Controla tus saldos y movimientos desde cualquier lugar y en cualquier momento
                 </li>
@@ -20,7 +20,7 @@ export const DigitalBank = () => {
 export const FinancialProducts = () => {
     return (
         <>
-            <ul className="grid gap-4 text-xl">
+            <ul className="grid gap-4 text-lg">
                 <li>
                     Apertura Digital: Solicita tu cuenta de ahorros o corriente 100% en línea, sin papeleo físico.
                 </li>
@@ -38,7 +38,7 @@ export const FinancialProducts = () => {
 export const Protection = () => {
     return (
         <>
-            <ul className="grid gap-4 text-xl">
+            <ul className="grid gap-4 text-lg">
                 <li>
                     Acceso Blindado: Protegemos tu cuenta con Autenticación Multifactor (MFA) de última generación
                 </li>
@@ -57,7 +57,7 @@ export const Protection = () => {
 export const CustomerService = () => {
     return (
         <>
-            <ul className="grid gap-4 text-xl">
+            <ul className="grid gap-4 text-lg">
                 <li>
                     Soporte Multicanal: ¿Dudas? Contáctanos por chat, solicita una llamada o revisa nuestro centro de ayuda interactivo.
                 </li>
