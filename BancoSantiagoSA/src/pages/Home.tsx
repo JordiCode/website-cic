@@ -1,4 +1,4 @@
-import { Contact } from "../components/Contact"
+import { Contact } from "../components/Contact/Contact"
 import { FAQ } from "../components/FAQ"
 import { Hero } from "../components/Hero"
 import { Location } from "../components/Location"
