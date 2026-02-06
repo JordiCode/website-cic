@@ -11,7 +11,7 @@ export const Contact = () => {
             <form className="flex flex-col gap-6 rounded-3xl bg-secondaryText/1 px-12 py-16">
                 <div className="flex flex-col gap-2">
                     <label htmlFor="cedula" className="text-2xl text-primaryText">Número de Cedula <span className="text-red-400">*</span></label>
-                    <input type="text" placeholder="00000000000" className="outline-none focus:border-accent  p-5 border border-secondaryText/30 bg-secondaryText/10 text-primaryText rounded-md" />
+                    <input type="text" placeholder="00000000000" className="outline-none focus:border-accent p-5 border border-secondaryText/30 bg-secondaryText/10 text-primaryText rounded-md" />
                 </div>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="cedula" className="text-2xl text-primaryText">Asunto <span className="text-red-400">*</span></label>
