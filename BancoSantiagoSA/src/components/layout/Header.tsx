@@ -8,19 +8,19 @@ export const Header = () => {
 
     return (
         <>
-            <header className="bg-background h-16 fixed z-20 text-sm w-full p-2.5 py-5 flex gap-3 justify-between items-center">
-                <div className="flex items-center gap-2">
+            <header className="bg-background h-16 fixed top-0 left-1/2 -translate-x-1/2 z-50 text-sm max-w-7xl  w-full p-2.5 py-5 flex gap-3 justify-between items-center">
+                <a href="/" className="flex items-center gap-2">
                     <LogoIcon size={28} />
                     <p className="text-xl font-medium text-secondaryColor">
                         Santiago SA
                     </p>
-                </div>
+                </a>
 
                 <Nav className={'max-md:hidden flex gap-4 items-center'} />
 
                 {/* Responsive Menu Toggle */}
                 <button
-                    className="relative p-3 w-10 h-10 md:hidden cursor-pointer"
+                    className="relative p-6 w-10 h-10 md:hidden cursor-pointer hover:bg-accent/50 active:bg-accent/50 rounded-full"
                     onClick={toggleOpen}
                 >
                     <div className="relative flex items-center justify-center">
@@ -36,7 +36,7 @@ export const Header = () => {
                 </button>
             </header >
             {/* Responsive Menu*/}
-            <Nav className={`md:hidden grid gap-4 bg-background fixed ${isOpen ? 'top-16' : '-top-full'} left-0 w-full transition-all duration-300 px-1 py-2`} />
+            <Nav className={`md:hidden grid gap-4 bg-background fixed z-40 ${isOpen ? 'top-16' : '-top-full'} left-0 w-full transition-all duration-500 px-1 py-2 pb-4`} />
         </>
     )
 }
