@@ -1,61 +1,49 @@
+import { ChevronRightIcon } from "./icons/ChevronRightIcon"
+import { LogoIcon } from "./icons/LogoIcon"
 import { MoneyBagIcon } from "./icons/MoneyBagIcon"
 
 export const Hero = () => {
     return (
-        <section className="relative overflow-hidden pt-16 md:pt-24 lg:pt-32 pb-16">
-            {/* Background Gradient Effects */}
-            <div
-                className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-accent/10 blur-[120px] rounded-full pointer-events-none z-0"
-            >
-            </div>
-            <div
-                className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center"
-            >
-                <div
-                    className="inline-flex items-center rounded-full border border-primary/30 bg-accent/10 px-3 py-1 text-xs font-medium text-primary mb-6"
-                >
-                    <span
-                        className="flex h-1.5 w-1.5 rounded-full bg-accent mr-2 animate-pulse"
-                    ></span>
-                    <p className="text-primaryText">
-                        Ahora Disponibles 24/7
-                    </p>
-                </div>
-                <h1
-                    className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-primaryText  max-w-4xl leading-[1.1]"
-                >
-                    Creciendo juntos en el
-                    {' '}
-                    <span
-                        className="text-transparent bg-clip-text bg-linear-to-r from-primaryText to-accent"
-                    >
-                        Corazón del Cibao
-                    </span>
+        <section className="max-w-7xl w-full mx-auto flex items-center  max-md:flex-col gap-24 max-md:gap-12 overflow-hidden px-3 py-24 max-md:py-12 relative mt-16 text-baseText">
+            <div className="w-[80%]">
+                <h1 className="text-4xl  text-secondaryColor mb-10">
+                    Tu Banco de
+                    <br />
+                    <span className="text-6xl font-bold text-primaryText">Confianza</span>
                 </h1>
-                <p className="mt-6 max-w-2xl text-lg">
-                    En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar
-                    tus metas con la solidez que mereces.
-                </p>
-                <div
-                    className="mt-10 flex flex-col sm:flex-row gap-4 w-full justify-center"
+                <p className="mb-5 text-secondaryColor/80">En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces</p>
+                <a
+                    href="#"
+                    className="text-lg font-semibold flex items-center gap-1 group"
                 >
-                    {/* Pendiente a implementar el siguiente button y enlace */}
-                    <button
-                        className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-base font-bold text-primaryText  shadow-lg shadow-primary/25 transition-all hover:bg-accent-hover hover:scale-105 focus-visible:outline-none"
-                    >
-                        Abre tu cuenta gratis
-                    </button>
-                    <a
-                        href="#"
-                        className="inline-flex h-12 items-center justify-center rounded-lg border  border-slate-800 bg-background px-8 text-base font-bold  shadow transition-all hover:bg-slate-900 focus-visible:outline-none gap-2 notranslate"
-                        translate="no"
-                    >
-                        <span className="text-accent">
-                            <MoneyBagIcon size={24} />
-                        </span>
-                        Solicita tu préstamo
-                    </a>
+                    <span>Hazte Cliente</span>
+                    <ChevronRightIcon size={24} className="transition-transform group-hover:translate-x-1.5" />
+
+                </a>
+            </div>
+            <div className="px-10 py-8 pb-12 flex flex-col justify-between bg-secondaryColor shadow-2xl  text-secondaryText rounded-xl min-w-[475px] max-md:min-w-full h-[300px]">
+                <div className="flex items-center gap-2">
+                    <LogoIcon size={36} />
+                    <p>Santiago SA</p>
                 </div>
+
+
+                <div className="bg-orange-200 relative w-[85.5px] h-[54px] rounded-lg border border-[#6B543E]/20">
+                    <span className="absolute top-0 left-[calc(50%-0.5px)] h-full w-px bg-[#6B543E]"></span>
+
+                    <span className="absolute top-[35%] left-0 w-full h-px bg-[#6B543E]"></span>
+                    <span className="absolute top-[70%] left-0 w-full h-px bg-[#6B543E]"></span>
+
+                    <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange-200 border border-[#6B543E] w-[14.4px] h-[28.8px] z-10 rounded-sm"></span>
+                </div>
+
+                <p className="flex gap-4 font-semibold tracking-widest">
+                    <span>0123</span>
+                    <span>4567</span>
+                    <span>8901</span>
+                    <span>0203</span>
+                </p>
+
             </div>
         </section>
     )
