@@ -107,7 +107,7 @@ export const Services = () => {
             <h2 className="flex items-center gap-3 text-2xl mb-2">
                 <HandHeartIcon size={32} className="text-accent/80 relative -top-0.5" />
                 <span className="font-medium">
-                    Descubre Nuestros Servicios
+                    Lo que tenemos para ti
                 </span>
             </h2>
             <div className="relative px-3">
