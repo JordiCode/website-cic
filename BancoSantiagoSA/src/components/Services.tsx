@@ -2,48 +2,57 @@
 import { useEffect, useRef } from "react"
 import { HandHeartIcon } from "./icons/HandHeartIcon"
 import { ChevronRightIcon } from "./icons/ChevronRightIcon"
+import { PiggyBankIcon } from "./icons/piggyBankIcon"
+import { HeartIcon } from "./icons/HeartIcon"
+import { DataCenterIcon } from "./icons/DataCenterIcon"
+import { FlashIcon } from "./icons/FlashIcon"
+import { CashBackIcon } from "./icons/CashBackIcon"
+import { Phone2Icon } from "./icons/Phone2Icon"
 
 const services = [
     {
-        title: "Prestamos personales",
-        description: "En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces",
+        Icon: PiggyBankIcon,
+        title: "Cuentas Santiago Ahorra",
+        description: `Abre tu cuenta 100% digital, sin balances mínimos y con metas de ahorro personalizadas desde tu App`,
         image: "/images/prestamos-personales.webp",
-        link: "https://www.google.com",
+        link: "#",
     },
     {
-        title: "Prestamos personales",
-        description: "En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-        link: "https://www.google.com",
+        Icon: CashBackIcon,
+        title: "Tarjeta Santiago Cashback",
+        description: `Recibe devoluciones por tus compras diarias en supermercados y farmacias con control total desde el celular`,
+        image: "/images/cashback.webp",
+        link: "#",
     },
     {
-        title: "Prestamos personales",
-        description: "En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces",
-        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-        link: "https://www.google.com",
+        Icon: FlashIcon,
+        title: "Préstamos al Instante",
+        description: "Solicita tu crédito personal en minutos con desembolso inmediato a tu cuenta y sin trámites físicos",
+        image: '/images/prestamos-al-instante.jpg',
+        link: "#",
     },
     {
-        title: "Prestamos personales",
-        description: "En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces",
-        image: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&w=800&q=80",
-        link: "https://www.google.com",
-
-
+        Icon: DataCenterIcon,
+        title: "Centro de Pagos",
+        description: "Paga tus servicios, impuestos y recargas de forma rápida, segura y con opción de programación automática",
+        image: "/images/centros-de-pago.jpg",
+        link: "#",
     },
     {
-        title: "Prestamos personales",
-        description: "En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces",
-        image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=80",
-        link: "https://www.google.com",
+        Icon: HeartIcon,
+        title: "Santiago de Una",
+        description: "Envía dinero a tus contactos en tiempo real usando solo su número de teléfono o escaneando un código QR",
+        image: "/images/ciudad-corazon.jpg",
+        link: "#",
     },
     {
-        title: "Prestamos personales",
-        description: "En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces",
-        image: "https://images.unsplash.com/photo-1491002052546-bf38f186af56?auto=format&fit=crop&w=800&q=80",
-        link: "https://www.google.com",
+        Icon: Phone2Icon,
+        title: "Certificados Digitales",
+        description: "Invierte tus ahorros con tasas preferenciales y gestiona tus rendimientos totalmente en línea desde tu hogar",
+        image: "/images/certificado-digital.jpg",
+        link: "#",
     }
 ]
-
 
 export const Services = () => {
     const ContainRef = useRef<HTMLDivElement>(null);
@@ -109,18 +118,21 @@ export const Services = () => {
                     className="group flex snap-x snap-mandatory overflow-x-scroll w-full h-91 gap-6 p-1 bg-gray-100 rounded-xl">
                     {
 
-                        services.map(({ title, description, image, link }, index) => (
+                        services.map(({ Icon, title, description, image, link }, index) => (
                             <div key={index} className={`relative shrink-0 max-w-[500px] w-full snap-start flex flex-col justify-center bg-gray-900/75 rounded-xl`}>
-                                <div className="absolute z-10 w-full h-full px-14 flex flex-col justify-center bg-gray-900/75 rounded-xl">
-                                    <h2 className="text-secondaryText text-xl mb-4">{title}</h2>
-                                    <p className="text-baseColor mb-4">En Banco{description}</p>
-                                    <a href={link} className="text-accent font-semibold">Conocer mas</a>
+                                <div className="absolute z-10 w-full h-full px-14 flex flex-col justify-center bg-gray-900/85 rounded-xl">
+                                    <h2 className="flex items-center gap-2 text-secondaryText text-xl mb-4">
+                                        <span>{Icon({ size: 32, className: 'text-accent fill-accent relative -top-0.5' })}</span>
+                                        {' '}
+                                        {title}
+                                    </h2>
+                                    <p className="text-baseColor mb-4">{description}</p>
+                                    <a href={link} className="text-accent hover:text-blue-300 transition-colors font-semibold">Conocer mas</a>
                                 </div>
                                 <img src={image} alt="" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         ))
                     }
-
                 </div>
                 <PrevNextButton type="next" buttonRef={nextButtonRef} onClick={() => handleClick({ direction: 'next' })}>
                     <ChevronRightIcon size={24} className="stroke-white" />
@@ -130,7 +142,6 @@ export const Services = () => {
         </section >
     )
 }
-
 
 interface PrevNextButtonProps {
     type: 'prev' | 'next';
