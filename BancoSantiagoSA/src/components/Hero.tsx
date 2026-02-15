@@ -1,11 +1,11 @@
 import { ChevronRightIcon } from "./icons/ChevronRightIcon"
 import { LogoIcon } from "./icons/LogoIcon"
-import { MoneyBagIcon } from "./icons/MoneyBagIcon"
+//import { MoneyBagIcon } from "./icons/MoneyBagIcon"
 
 export const Hero = () => {
     return (
         <section className="max-w-7xl w-full mx-auto flex items-center  max-md:flex-col gap-24 max-md:gap-12 overflow-hidden px-3 py-24 max-md:py-12 relative mt-16 text-baseText">
-            <div className="w-[80%]">
+            <div>
                 <h1 className="text-4xl  text-secondaryColor mb-10">
                     Tu Banco de
                     <br />
