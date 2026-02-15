@@ -127,7 +127,7 @@ export const Services = () => {
                                         {title}
                                     </h2>
                                     <p className="text-baseColor mb-4">{description}</p>
-                                    <a href={link} className="text-accent hover:text-blue-300 transition-colors font-semibold">Conocer mas</a>
+                                    <a href={link} className="text-accent hover:brightness-130 transition-colors font-semibold">Conocer mas</a>
                                 </div>
                                 <LazyLoadImagen src={image} alt="" className="w-full h-full object-cover rounded-xl" />
                             </div>
@@ -153,7 +153,7 @@ interface PrevNextButtonProps {
 const PrevNextButton = ({ type, children, onClick, buttonRef }: PrevNextButtonProps) => (
     <button
         ref={buttonRef}
-        className={`absolute z-20 top-[30%] ${type === 'prev' ? 'left-0' : 'right-0'} -translate-y-1/2 bg-accent p-3 rounded-md cursor-pointer`}
+        className={`absolute z-20 top-[30%] ${type === 'prev' ? 'left-0' : 'right-0'} -translate-y-1/2 bg-accent hover:brightness-120  p-3 rounded-md cursor-pointer`}
         onClick={onClick}
     >
         {children}
