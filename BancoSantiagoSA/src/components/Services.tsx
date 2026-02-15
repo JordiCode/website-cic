@@ -8,6 +8,7 @@ import { DataCenterIcon } from "./icons/DataCenterIcon"
 import { FlashIcon } from "./icons/FlashIcon"
 import { CashBackIcon } from "./icons/CashBackIcon"
 import { Phone2Icon } from "./icons/Phone2Icon"
+import { LazyLoadImagen } from "./LazyLoadImagen"
 
 const services = [
     {
@@ -70,14 +71,14 @@ export const Services = () => {
         const lastService = scrollContainer.lastChild as Element
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.target === firstService) {
-                    prevButton.style.display = entry.isIntersecting ? 'none' : 'block';
+            entries.forEach(({ target, isIntersecting }) => {
+                if (target === firstService) {
+                    prevButton.style.display = isIntersecting ? 'none' : 'block';
                 }
 
-                if (entry.target === lastService) {
+                if (target === lastService) {
 
-                    nextButton.style.display = entry.isIntersecting ? 'none' : 'block';
+                    nextButton.style.display = isIntersecting ? 'none' : 'block';
                 }
             });
         }, {
@@ -117,10 +118,9 @@ export const Services = () => {
                     ref={ContainRef}
                     className="group flex snap-x snap-mandatory overflow-x-scroll w-full h-91 gap-6 p-1 bg-gray-100 rounded-xl">
                     {
-
                         services.map(({ Icon, title, description, image, link }, index) => (
-                            <div key={index} className={`relative shrink-0 max-w-[500px] w-full snap-start flex flex-col justify-center bg-gray-900/75 rounded-xl`}>
-                                <div className="absolute z-10 w-full h-full px-14 flex flex-col justify-center bg-gray-900/85 rounded-xl">
+                            <div key={index} className={`relative shrink-0 max-w-[500px] w-full snap-start flex flex-col justify-center rounded-xl`}>
+                                <div className="absolute z-10 w-full h-full px-14 flex flex-col justify-center  rounded-xl">
                                     <h2 className="flex items-center gap-2 text-secondaryText text-xl mb-4">
                                         <span>{Icon({ size: 32, className: 'text-accent fill-accent relative -top-0.5' })}</span>
                                         {' '}
@@ -129,7 +129,7 @@ export const Services = () => {
                                     <p className="text-baseColor mb-4">{description}</p>
                                     <a href={link} className="text-accent hover:text-blue-300 transition-colors font-semibold">Conocer mas</a>
                                 </div>
-                                <img src={image} alt="" className="w-full h-full object-cover rounded-xl" />
+                                <LazyLoadImagen src={image} alt="" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         ))
                     }
