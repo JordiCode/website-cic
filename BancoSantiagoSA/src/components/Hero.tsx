@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import { ChevronRightIcon } from "./icons/ChevronRightIcon"
 import { LogoIcon } from "./icons/LogoIcon"
 
@@ -11,13 +12,13 @@ export const Hero = () => {
                     <span className="text-6xl font-bold text-primaryText">Confianza</span>
                 </h1>
                 <p className="mb-5 text-secondaryColor/80">En Banco Santiago SA, protegemos tus ahorros y te impulsamos a alcanzar tus metas con la solidez que mereces</p>
-                <a
-                    href="#"
+                <Link
+                    to="/hazte-cliente"
                     className="text-lg font-semibold flex items-center gap-1 group"
                 >
                     <span>Hazte Cliente</span>
                     <ChevronRightIcon size={24} className="transition-transform group-hover:translate-x-1.5" />
-                </a>
+                </Link>
             </div>
             <div className="px-10 py-8 pb-12 flex flex-col justify-between bg-secondaryColor shadow-2xl  text-secondaryText rounded-xl min-w-[475px] max-md:min-w-full h-[300px]">
                 <div className="flex items-center gap-2">
