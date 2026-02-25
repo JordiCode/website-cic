@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { ChevronRightIcon } from "./icons/ChevronRightIcon"
+import { QuestionIcon } from "./icons/QuestionIcon";
+import { Link } from "react-router";
 
 const FAQS = [
     {
@@ -41,16 +43,26 @@ const FAQS = [
 
 export const FAQ = () => {
     return (
-        <section className="mx-auto max-w-7xl w-full mt-24 max-md:mt-12 flex flex-col items-center">
-            <div className="mb-6">
-                <span className="flex flex-col items-center gap-4">
-                    <h2 className="text-4xl md:text-5xl mb-2 text-center font-black tracking-tight leading-[1.1] text-transparent bg-clip-text bg-linear-to-r from-primaryText to-accent">
-                        Preguntas Frecuentes
-                    </h2>
+        <section
+            className="mx-auto max-w-7xl  w-full px-3 pt-12 text-primaryText overflow-hidden"
+        >
+            <h2 className="flex items-center gap-3 text-2xl mb-6">
+                <QuestionIcon size={32} className="text-accent/80 relative -top-0.5" />
+                <span className="font-medium">
+                    Preguntas y respuestas
                 </span>
-            </div>
+            </h2>
+            <p className="text-baseText leading-7 mb-8">
+                Explora las preguntas más frecuentes para resolver tus dudas al instante. Si no encuentras exactamente lo que buscas, no te preocupes: nuestra
+                <Link to="/guia-de-ayuda" className="text-primaryText underline">
+                    {' '}
+                    Guía de ayuda
+                    {' '}
+                </Link>
+                tiene toda la información detallada que necesitas.
+            </p>
 
-            <div className="w-full px-5 flex flex-col ">
+            <div className="w-full px-5 flex gap-8 flex-col ">
                 {
                     FAQS.map(({ id, question, answer }) => (
                         <Question key={id} question={question} answer={answer} />
@@ -66,14 +78,17 @@ const Question = ({ question, answer }: { question: string, answer: string }) =>
     const toggleOpen = () => setIsOpen(!isOpen)
 
     return (
-        <div className="my-2">
-            <p className={`flex justify-between text-primaryText bg-secondaryText/50  ${isOpen ? 'rounded-t-3xl' : 'rounded-3xl'} p-5`} onClick={toggleOpen}>
+        <div>
+            <p
+                className={`flex justify-between text-primaryText  ${isOpen ? 'rounded-t-3xl bg-accent/40' : 'rounded-3xl bg-secondaryColor/10'} hover:bg-accent/40  p-5 cursor-pointer`}
+                onClick={toggleOpen}
+            >
                 <span>
                     {question}
                 </span>
                 <ChevronRightIcon size={24} className={`transition-transform ${isOpen ? 'rotate-90' : ''}`} />
             </p>
-            <p className={`bg-secondaryText/20 rounded-b-3xl p-5 ${isOpen ? '' : 'hidden'}`}>
+            <p className={`text-baseText p-5 px-10 ${isOpen ? '' : 'hidden'}`}>
                 {answer}
             </p>
         </div>
