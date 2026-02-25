@@ -16,7 +16,7 @@ export const Header = () => {
                     </p>
                 </a>
 
-                <Nav className={'max-md:hidden flex gap-4 items-center'} />
+                <Nav className={'max-md:hidden flex gap-4 items-center'} toggleOpen={toggleOpen} />
 
                 {/* Responsive Menu Toggle */}
                 <button
@@ -36,7 +36,10 @@ export const Header = () => {
                 </button>
             </header >
             {/* Responsive Menu*/}
-            <Nav className={`md:hidden grid gap-4 bg-background fixed z-40 ${isOpen ? 'top-16' : '-top-full'} left-0 w-full transition-all duration-500 px-1 py-2 pb-4`} />
+            <Nav
+                className={`md:hidden grid gap-4 bg-background fixed z-40 ${isOpen ? 'top-16' : '-top-full'} left-0 w-full transition-all duration-300 px-1 py-2 pb-4`}
+                toggleOpen={toggleOpen}
+            />
         </>
     )
 }
