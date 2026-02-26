@@ -9,6 +9,7 @@ import { FlashIcon } from "./icons/FlashIcon"
 import { CashBackIcon } from "./icons/CashBackIcon"
 import { Phone2Icon } from "./icons/Phone2Icon"
 import { LazyLoadImagen } from "./LazyLoadImagen"
+import { Link } from "react-router"
 
 const services = [
     {
@@ -127,7 +128,7 @@ export const Services = () => {
                                         {title}
                                     </h2>
                                     <p className="text-baseColor mb-4">{description}</p>
-                                    <a href={link} className="text-accent hover:brightness-130 transition-colors font-semibold">Conocer mas</a>
+                                    <Link to={link} className="text-accent hover:brightness-130 transition-colors font-semibold">Conocer mas</Link>
                                 </div>
                                 <LazyLoadImagen src={image} alt="" className="w-full h-full object-cover rounded-xl" />
                             </div>
