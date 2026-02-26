@@ -16,42 +16,42 @@ const services = [
         title: "Cuentas Santiago Ahorra",
         description: `Abre tu cuenta 100% digital, sin balances mínimos y con metas de ahorro personalizadas desde tu App`,
         image: "/images/prestamos-personales.webp",
-        link: "#",
+        link: "/prestamos-personales",
     },
     {
         Icon: CashBackIcon,
         title: "Tarjeta Santiago Cashback",
         description: `Recibe devoluciones por tus compras diarias en supermercados y farmacias con control total desde el celular`,
         image: "/images/cashback.webp",
-        link: "#",
+        link: "/cashback",
     },
     {
         Icon: FlashIcon,
         title: "Préstamos al Instante",
         description: "Solicita tu crédito personal en minutos con desembolso inmediato a tu cuenta y sin trámites físicos",
         image: '/images/prestamos-al-instante.jpg',
-        link: "#",
+        link: "/prestamos-al-instante",
     },
     {
         Icon: DataCenterIcon,
         title: "Centro de Pagos",
         description: "Paga tus servicios, impuestos y recargas de forma rápida, segura y con opción de programación automática",
         image: "/images/centros-de-pago.jpg",
-        link: "#",
+        link: "/centros-de-pago",
     },
     {
         Icon: HeartIcon,
         title: "Santiago de Una",
         description: "Envía dinero a tus contactos en tiempo real usando solo su número de teléfono o escaneando un código QR",
         image: "/images/ciudad-corazon.jpg",
-        link: "#",
+        link: "/ciudad-corazon",
     },
     {
         Icon: Phone2Icon,
         title: "Certificados Digitales",
         description: "Invierte tus ahorros con tasas preferenciales y gestiona tus rendimientos totalmente en línea desde tu hogar",
         image: "/images/certificado-digital.jpg",
-        link: "#",
+        link: "/certificado-digital",
     }
 ]
 

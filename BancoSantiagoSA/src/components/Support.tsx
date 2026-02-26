@@ -66,7 +66,7 @@ export const Support = () => {
                     </div>
                 </div>
                 <div className="self-center max-sm:hidden w-max justify-center">
-                    <div className="relative -top-12 bg-[url('images/girl-support.webp')] z-10 w-84 h-84 bg-cover bg-center bg-no-repeat">
+                    <div className="relative -top-12 bg-[url('/images/girl-support.webp')] z-10 w-84 h-84 bg-cover bg-center bg-no-repeat">
                         <ChevronIcon className="absolute w-full h-max  left-0 -bottom-12" />
                     </div>
                 </div>
